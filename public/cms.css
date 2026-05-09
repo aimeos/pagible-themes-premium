@@ -389,8 +389,18 @@ h4 {
     line-height: 1.4;
 }
 
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: calc(var(--pico-font-size) * 3.5);
+    }
+
+    h2 {
+        font-size: calc(var(--pico-font-size) * 2.25);
+    }
+}
+
 img {
-    border-radius: var(--pico-border-radius);
+    border-radius: calc(var(--pico-border-radius) * 2);
 }
 
 .btn {
@@ -447,14 +457,4 @@ img {
     text-align: center;
     display: block;
     margin: auto;
-}
-
-@media screen and (min-width: 768px) {
-    h1 {
-        font-size: calc(var(--pico-font-size) * 3.5);
-    }
-
-    h2 {
-        font-size: calc(var(--pico-font-size) * 2.25);
-    }
 }

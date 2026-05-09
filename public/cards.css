@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 768px) {
     .cards .card-list {
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -22,7 +22,7 @@
     transition: box-shadow 0.25s ease, transform 0.25s ease;
     overflow: hidden;
     text-align: start;
-    padding: calc(var(--pico-border-radius) * 4);
+    padding: 2rem;
 }
 
 .cards .card-item:hover {

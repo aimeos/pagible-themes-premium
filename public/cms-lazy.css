@@ -152,7 +152,7 @@ pre:has(code[class*="language-"]) {
     background-color: var(--pico-contrast-inverse);
     border-radius: calc(var(--pico-border-radius) * 2);
     border: 1px solid var(--pico-muted-border-color);
-    padding: calc(var(--pico-border-radius) * 4);
+    padding: 2rem;
 }
 
 pre code[class*=language-] {
@@ -161,7 +161,7 @@ pre code[class*=language-] {
     font-family: var(--pico-font-family-monospace);
     border-radius: calc(var(--pico-border-radius) * 2);
     overflow-x: auto;
-    padding: calc(var(--pico-border-radius) * 4);
+    padding: 2rem;
 }
 
 p code {
@@ -195,21 +195,14 @@ footer.cms-content + footer.bottom .container {
     border-top: 1px solid var(--pico-muted-border-color);
 }
 
-footer.container {
-    padding: 0;
-}
-
-footer.cms-content {
+footer.cms-content,
+footer.cms-content > :nth-child(odd) {
     background-color: var(--pico-contrast);
-    padding: 4rem 0 2rem;
-}
-
-footer.cms-content .container {
-    max-width: 1280px;
 }
 
 footer.cms-content .cards .card-list {
     grid-template-columns: 1fr 1fr;
+    justify-self: auto;
     gap: 2rem;
 }
 
@@ -255,7 +248,7 @@ footer.cms-content .cards .text a:visited {
     color: var(--pico-contrast-inverse);
     text-decoration: none;
     display: inline-block;
-    padding: 0.31rem;
+    padding: 0.31rem 0;
 }
 
 footer.cms-content .cards .text a:hover {

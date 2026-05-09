@@ -83,7 +83,7 @@
     filter: drop-shadow(0 1.5rem 3rem #0F172A14);
     width: fit-content;
     margin: 3rem auto 0;
-    padding: calc(var(--pico-border-radius) * 4);
+    padding: 2rem;
     display: block;
 }
 
