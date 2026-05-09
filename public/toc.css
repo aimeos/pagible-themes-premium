@@ -6,7 +6,7 @@ nav.toc {
     display: block;
     padding: 1.5rem 2rem;
     border: 1px solid var(--pico-muted-border-color);
-    border-radius: calc(var(--pico-border-radius) * 2);
+    border-radius: calc(var(--pico-border-radius) * 3);
     background-color: var(--pico-contrast-inverse);
 }
 

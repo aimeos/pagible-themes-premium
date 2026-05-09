@@ -8,7 +8,11 @@
 }
 
 .cms-content .container {
-    padding: 3.5rem min(5%, 2rem);
+    padding: 4rem min(5%, 2rem);
+}
+
+.cms-content > :nth-child(odd) {
+    background-color: var(--pico-background-color);
 }
 
 .cms-content > :nth-child(even) {
@@ -17,8 +21,9 @@
 
 .cms-content > .heading + .text,
 .cms-content > .heading + .cards,
-.cms-content > .heading + .image {
-    margin-top: -2rem;
+.cms-content > .heading + .image,
+.cms-content > .heading + .image-text {
+    margin-top: -3rem;
 }
 
 .heading h1,
@@ -56,6 +61,6 @@
 
 @media screen and (min-width: 768px) {
     .cms-content .container {
-        padding: 5rem min(5%, 2rem);
+        padding: 6rem min(5%, 2rem);
     }
 }

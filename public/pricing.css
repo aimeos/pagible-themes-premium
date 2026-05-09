@@ -55,7 +55,7 @@
     inset: 0.25rem;
     width: calc(50% - 0.25rem);
     background: var(--pico-background-color, #FFFFFF);
-    border-radius: calc(var(--pico-border-radius) * 0.75);
+    border-radius: calc(var(--pico-border-radius) * 1.5);
     box-shadow: var(--pico-box-shadow);
     transition: transform 0.2s;
 }
@@ -91,7 +91,7 @@
     padding: 2rem;
     background-color: var(--pico-primary-inverse, #FFFFFF);
     border: 1px solid var(--pico-muted-border-color);
-    border-radius: calc(var(--pico-border-radius) * 2);
+    border-radius: var(--pico-border-radius);
     box-shadow: var(--pico-box-shadow);
 }
 

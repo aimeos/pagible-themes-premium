@@ -8,13 +8,13 @@ dialog > article {
     height: calc(100vh - 2rem);
     overflow: unset;
     border: 1px solid var(--pico-muted-border-color);
-    border-radius: calc(var(--pico-border-radius) * 2);
+    border-radius: calc(var(--pico-border-radius) * 4);
 }
 
 dialog header {
     background-color: var(--pico-muted-background-color);
     border-bottom: 1px solid var(--pico-muted-border-color);
-    border-radius: calc(var(--pico-border-radius) * 2) calc(var(--pico-border-radius) * 2) 0 0;
+    border-radius: calc(var(--pico-border-radius) * 4) calc(var(--pico-border-radius) * 4) 0 0;
 }
 
 dialog form {
@@ -108,7 +108,7 @@ dialog.search .result-content b {
     background-color: var(--pico-text-selection-color);
     color: var(--pico-primary);
     padding: 0.1rem 0.25rem;
-    border-radius: calc(var(--pico-border-radius) * 0.5);
+    border-radius: calc(var(--pico-border-radius) * 0.75);
 }
 
 dialog.search .load-more {
@@ -151,7 +151,7 @@ dialog.search .load-more:disabled {
 
 pre:has(code[class*="language-"]) {
     background-color: var(--pico-contrast-inverse);
-    border-radius: calc(var(--pico-border-radius) * 1.5);
+    border-radius: calc(var(--pico-border-radius) * 2);
     border: 1px solid var(--pico-muted-border-color);
     padding: 1rem;
 }
@@ -160,7 +160,7 @@ pre code[class*=language-] {
     color: var(--pico-code-color);
     background-color: var(--pico-code-background-color);
     font-family: var(--pico-font-family-monospace);
-    border-radius: var(--pico-border-radius);
+    border-radius: calc(var(--pico-border-radius) * 1.5);
     overflow-x: auto;
     padding: 1rem;
 }
@@ -168,7 +168,7 @@ pre code[class*=language-] {
 p code {
     color: var(--pico-code-color);
     background-color: var(--pico-code-background-color);
-    border-radius: calc(var(--pico-border-radius) * 0.5);
+    border-radius: calc(var(--pico-border-radius) * 0.75);
     font-family: var(--pico-font-family-monospace);
     overflow-wrap: anywhere;
     padding: 0.15rem 0.4rem;
@@ -181,7 +181,7 @@ footer.bottom {
     color: #FFFFFFCC;
     font-size: calc(var(--pico-font-size) * 0.65);
     font-weight: 400;
-    border-radius: calc(var(--pico-border-radius) * 3) calc(var(--pico-border-radius) * 3) 0 0;
+    border-radius: calc(var(--pico-border-radius) * 4) calc(var(--pico-border-radius) * 4) 0 0;
     margin-top: 4rem;
 }
 
@@ -218,7 +218,7 @@ footer.bottom .brand img {
 
 footer.cms-content {
     background-color: var(--pico-contrast);
-    border-radius: calc(var(--pico-border-radius) * 3) calc(var(--pico-border-radius) * 3) 0 0;
+    border-radius: calc(var(--pico-border-radius) * 4) calc(var(--pico-border-radius) * 4) 0 0;
     padding: 4rem 0 2rem;
 }
 
