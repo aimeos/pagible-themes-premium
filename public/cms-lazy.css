@@ -177,12 +177,13 @@ p code {
 
 
 footer.bottom {
-    background-color: var(--pico-contrast);
-    color: #FFFFFFCC;
+    background-color: #0F172A;
+    --pico-muted-color: #94A3B8;
+    --pico-muted-border-color: #1E293B;
+    color: var(--pico-muted-color);
     font-size: calc(var(--pico-font-size) * 0.65);
     font-weight: 400;
-    border-radius: calc(var(--pico-border-radius) * 4) calc(var(--pico-border-radius) * 4) 0 0;
-    margin-top: 4rem;
+    margin: 0;
 }
 
 footer.bottom .container {
@@ -193,13 +194,8 @@ footer.bottom .container {
     align-items: center;
 }
 
-footer.cms-content + footer.bottom {
-    margin-top: 0;
-    border-radius: 0;
-}
-
 footer.cms-content + footer.bottom .container {
-    border-top: 1px solid #FFFFFF1A;
+    border-top: 1px solid var(--pico-muted-border-color);
 }
 
 footer.bottom .brand {
@@ -217,8 +213,11 @@ footer.bottom .brand img {
 }
 
 footer.cms-content {
-    background-color: var(--pico-contrast);
-    border-radius: calc(var(--pico-border-radius) * 4) calc(var(--pico-border-radius) * 4) 0 0;
+    background-color: #0F172A;
+    --pico-contrast: #FFFFFF;
+    --pico-contrast-inverse: #0F172A;
+    --pico-muted-color: #94A3B8;
+    --pico-muted-border-color: #1E293B;
     padding: 4rem 0 2rem;
 }
 
@@ -232,7 +231,7 @@ footer.cms-content .cards .card-list {
 }
 
 footer.cms-content .cards .card-item {
-    background-color: #00000000;
+    background-color: var(--pico-contrast-inverse);
     border: none;
     box-shadow: none;
     border-radius: 0;
@@ -246,13 +245,13 @@ footer.cms-content .cards .card-item:hover {
 }
 
 footer.cms-content .cards .title {
-    color: #9CA3AF;
+    color: var(--pico-muted-color);
     font-size: calc(var(--pico-font-size) * 0.65);
     margin-bottom: 1.5rem;
 }
 
 footer.cms-content .cards .text {
-    color: #FFFFFFCC;
+    color: var(--pico-contrast);
     font-weight: 400;
 }
 
@@ -263,14 +262,14 @@ footer.cms-content .cards .text p {
 
 footer.cms-content .cards .text a,
 footer.cms-content .cards .text a:visited {
-    color: #FFFFFFCC;
+    color: var(--pico-contrast);
     text-decoration: none;
     display: inline-block;
     padding: 0.5rem;
 }
 
 footer.cms-content .cards .text a:hover {
-    color: #FFFFFFA6;
+    color: var(--pico-muted-color);
 }
 
 footer.cms-content .cards .text ul {
@@ -281,24 +280,24 @@ footer.cms-content .cards .text ul {
 footer.cms-content .heading h1,
 footer.cms-content .heading h2,
 footer.cms-content .heading h3 {
-    color: var(--pico-contrast-inverse);
+    color: var(--pico-contrast);
 }
 
 footer.cms-content .text {
-    color: #FFFFFFA6;
+    color: var(--pico-muted-color);
 }
 
 footer.cms-content a,
 footer.cms-content a:visited {
-    color: #FFFFFFCC;
+    color: var(--pico-contrast);
 }
 
 footer.cms-content a:hover {
-    color: #FFFFFFA6;
+    color: var(--pico-muted-color);
 }
 
 footer.cms-content :focus-visible {
-    outline-color: var(--pico-contrast-inverse);
+    outline-color: var(--pico-contrast);
 }
 
 @media screen and (min-width: 768px) {
