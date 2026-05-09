@@ -35,6 +35,8 @@
     display: flex;
     gap: 0;
     align-items: stretch;
+    border: 1px solid var(--pico-muted-border-color);
+    overflow: hidden;
 }
 
 .image-text .grid-end {
@@ -49,6 +51,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--pico-contrast-inverse);
 }
 
 .image-text .grid-start .image,

@@ -215,14 +215,6 @@
 
         <footer class="bottom">
             <div class="container">
-                @foreach($page->ancestorsAndSelf->reverse() as $navItem)
-                    @if($fileId = cms($navItem, 'config.logo.data.file.id'))
-                        <span class="brand">
-                            <img src="{{ cmsurl(cmsfile($navItem, $fileId)?->path) }}" alt="{{ config('app.name') }}">
-                        </span>
-                        @break
-                    @endif
-                @endforeach
                 <span class="copyright">
                     &copy; {{ date('Y') }} {{ config('app.name') }}
                 </span>

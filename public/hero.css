@@ -83,12 +83,12 @@
     filter: drop-shadow(0 1.5rem 3rem #0F172A14);
     width: fit-content;
     margin: 3rem auto 0;
-    padding: 0.75rem;
+    padding: calc(var(--pico-border-radius) * 4);
     display: block;
 }
 
 .hero .second img {
-    border-radius: var(--pico-border-radius);
+    border-radius: calc(var(--pico-border-radius) * 2);
     display: block;
 }
 
@@ -98,7 +98,7 @@
     }
 
     .hero h1 {
-        font-size: calc(var(--pico-font-size) * 5);
+        font-size: calc(var(--pico-font-size) * 3.75);
     }
 
     .hero p {
