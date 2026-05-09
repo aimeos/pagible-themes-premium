@@ -59,7 +59,7 @@
 .image-text .grid-end .image {
     flex: 0 0 var(--ratio);
     max-width: var(--ratio);
-    background-color: var(--pico-muted-background-color);
+    background-color: transparent;
     display: flex;
     align-items: center;
 }
@@ -79,5 +79,12 @@
     .image-text .grid-end .image {
         max-width: 100%;
         flex: 0 0 auto;
+        padding: 0;
+    }
+
+    .image-text .grid-start img,
+    .image-text .grid-end img {
+        border-radius: 0;
+        width: 100%;
     }
 }

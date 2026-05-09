@@ -105,7 +105,7 @@ dialog.search .result-content {
 
 dialog.search .result-content b {
     background-color: var(--pico-text-selection-color);
-    color: var(--pico-primary);
+    color: var(--pico-contrast);
     padding: 0.1rem 0.25rem;
     border-radius: calc(var(--pico-border-radius) * 0.75);
 }
@@ -176,7 +176,7 @@ p code {
 
 
 footer.bottom {
-    color: var(--pico-muted-color);
+    color: var(--pico-contrast-hover-background);
     background-color: var(--pico-contrast);
     font-size: calc(var(--pico-font-size) * 0.65);
     font-weight: 400;
@@ -227,7 +227,7 @@ footer.cms-content .cards .card-item:hover {
 }
 
 footer.cms-content .cards .title {
-    color: var(--pico-muted-color);
+    color: var(--pico-contrast-hover-background);
     font-size: calc(var(--pico-font-size) * 0.8);
     margin-bottom: 1.5rem;
 }
@@ -252,7 +252,7 @@ footer.cms-content .cards .text a:visited {
 }
 
 footer.cms-content .cards .text a:hover {
-    color: var(--pico-muted-color);
+    color: var(--pico-contrast-hover-background);
 }
 
 footer.cms-content .cards .text ul {
@@ -267,7 +267,7 @@ footer.cms-content .heading h3 {
 }
 
 footer.cms-content .text {
-    color: var(--pico-muted-color);
+    color: var(--pico-contrast-hover-background);
 }
 
 footer.cms-content a,
@@ -276,7 +276,7 @@ footer.cms-content a:visited {
 }
 
 footer.cms-content a:hover {
-    color: var(--pico-muted-color);
+    color: var(--pico-contrast-hover-background);
 }
 
 footer.cms-content :focus-visible {

@@ -16,7 +16,7 @@
     --pico-color: #0F172A;
     --pico-background-color: #F8F9FA;
     --pico-text-selection-color: #DBEAFE;
-    --pico-muted-color: #64748B;
+    --pico-muted-color: #435064;
     --pico-muted-border-color: #0F172A14;
     --pico-muted-background-color: #F1F5F9;
     --pico-contrast: #0F172A;
@@ -29,22 +29,22 @@
     --pico-contrast-hover-underline: var(--pico-contrast-hover);
     --pico-contrast-focus: var(--pico-text-selection-color);
     --pico-contrast-inverse: #FFFFFF;
-    --pico-primary: #DC2626;
-    --pico-primary-background: #DC262610;
+    --pico-primary: #991B1B;
+    --pico-primary-background: #991B1B10;
     --pico-primary-border: var(--pico-primary);
     --pico-primary-underline: var(--pico-primary);
-    --pico-primary-hover: #B91C1C;
-    --pico-primary-hover-background: #B91C1C10;
+    --pico-primary-hover: #7F1D1D;
+    --pico-primary-hover-background: #7F1D1D10;
     --pico-primary-hover-border: var(--pico-primary-hover);
     --pico-primary-hover-underline: var(--pico-primary-hover);
     --pico-primary-focus: var(--pico-text-selection-color);
     --pico-primary-inverse: #FFFFFF;
-    --pico-secondary: #6366F1;
-    --pico-secondary-background: #6366F110;
+    --pico-secondary: #4338CA;
+    --pico-secondary-background: #4338CA10;
     --pico-secondary-border: var(--pico-secondary);
     --pico-secondary-underline: var(--pico-secondary);
-    --pico-secondary-hover: #4F46E5;
-    --pico-secondary-hover-background: #4F46E510;
+    --pico-secondary-hover: #3730A3;
+    --pico-secondary-hover-background: #3730A310;
     --pico-secondary-hover-border: var(--pico-secondary-hover);
     --pico-secondary-hover-underline: var(--pico-secondary-hover);
     --pico-secondary-focus: var(--pico-text-selection-color);
@@ -54,7 +54,7 @@
     --pico-h3-color: #0F172A;
     --pico-h4-color: #0F172A;
     --pico-h5-color: #334155;
-    --pico-h6-color: #475569;
+    --pico-h6-color: #435064;
     --pico-box-shadow: 0 1px 3px #0F172A0A, 0 1px 2px #0F172A06;
     --pico-dropdown-color: var(--pico-contrast);
     --pico-dropdown-border-color: var(--pico-contrast-border);
@@ -92,13 +92,13 @@ body {
 
 :where(a:not([role=button]):not([role=menuitem])),
 :where(a:not([role=button]):not([role=menuitem]):visited) {
-    --pico-color: var(--pico-primary);
-    --pico-underline: var(--pico-primary);
+    color: var(--pico-primary);
+    text-decoration-color: var(--pico-primary);
 }
 
 :where(a:not([role=button]):not([role=menuitem]):hover) {
-    --pico-color: var(--pico-primary-hover);
-    --pico-underline: var(--pico-primary-hover);
+    color: var(--pico-primary-hover);
+    text-decoration-color: var(--pico-primary-hover);
 }
 
 .skip-link {
@@ -118,12 +118,12 @@ nav li :where(a,[role=link]) {
 }
 
 body > header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
     border-bottom: 1px solid var(--pico-muted-border-color);
     background-color: color-mix(in srgb, #FFFFFF 70%, transparent);
     backdrop-filter: blur(20px) saturate(1.5);
+    position: sticky;
+    z-index: 100;
+    top: 0;
 }
 
 body > header > nav {
@@ -134,7 +134,7 @@ body > header > nav {
 header nav ol,
 header nav ul,
 header nav li {
-    margin: 0;
+    margin: 0 var(--pico-nav-element-spacing-horizontal);
 }
 
 header nav > ul > li {
@@ -299,40 +299,40 @@ header nav .menu a[role=button]:hover {
     }
 }
 
-nav[aria-label="breadcrumb"] {
+nav.breadcrumb {
     border-bottom: 1px solid var(--pico-muted-border-color);
     background-color: #FFFFFF80;
 }
 
-nav[aria-label="breadcrumb"] > ul {
+nav.breadcrumb > ul {
     text-align: center;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: auto;
     width: 100%;
 }
 
-nav[aria-label=breadcrumb] ul li {
-    justify-content: flex-end;
-    align-items: center;
+nav.breadcrumb ul li {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     font-size: calc(var(--pico-font-size) * 0.65);
     color: var(--pico-muted-color);
 }
 
-nav[aria-label=breadcrumb] ul li:not(:first-child) {
+nav.breadcrumb ul li:not(:first-child) {
     margin-inline-start: 0;
 }
 
-nav[aria-label=breadcrumb] ul li:not(:last-child)::after {
+nav.breadcrumb ul li:not(:last-child)::after {
     color: var(--pico-muted-color);
     width: auto;
 }
 
-nav[aria-label=breadcrumb] ul li a {
+nav.breadcrumb ul li a {
     color: var(--pico-muted-color);
 }
 
-nav[aria-label=breadcrumb] ul li a:hover {
+nav.breadcrumb ul li a:hover {
     color: var(--pico-primary);
     opacity: 1;
 }
@@ -364,38 +364,38 @@ h4, h5, h6 {
 }
 
 h1 {
-    --pico-typography-spacing-vertical: 2rem;
+    margin-bottom: 2rem;
     font-size: calc(var(--pico-font-size) * 2.25);
     line-height: 1.1;
     text-align: center;
 }
 
 h2 {
-    --pico-typography-spacing-vertical: 1.5rem;
+    margin-bottom: 1.5rem;
     font-size: calc(var(--pico-font-size) * 1.6);
     line-height: 1.2;
     text-align: center;
 }
 
 h3 {
-    --pico-typography-spacing-vertical: 1.25rem;
+    margin-bottom: 1.25rem;
     font-size: calc(var(--pico-font-size) * 0.9);
     line-height: 1.3;
 }
 
 h4 {
-    --pico-typography-spacing-vertical: 1rem;
+    margin-bottom: 1rem;
     font-size: calc(var(--pico-font-size) * 0.8);
     line-height: 1.4;
 }
 
 @media screen and (min-width: 768px) {
     h1 {
-        font-size: calc(var(--pico-font-size) * 3.5);
+        font-size: calc(var(--pico-font-size) * 2.5);
     }
 
     h2 {
-        font-size: calc(var(--pico-font-size) * 2.25);
+        font-size: calc(var(--pico-font-size) * 1.75);
     }
 }
 

@@ -96,13 +96,13 @@
 }
 
 .pricing .pricing-item.highlight {
-    background-color: #111827;
-    color: #FFFFFF;
-    border-color: #111827;
+    background-color: var(--pico-contrast);
+    color: var(--pico-contrast-inverse);
+    border-color: var(--pico-contrast);
     margin: -1rem 0;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    box-shadow: 0 1.5rem 4rem -1rem #00000030;
+    box-shadow: 0 1.5rem 4rem -1rem var(--pico-muted-border-color);
 }
 
 .pricing .badge {
@@ -136,7 +136,7 @@
 }
 
 .pricing .highlight .price {
-    border-bottom-color: #FFFFFF33;
+    border-bottom-color: var(--pico-contrast-border);
 }
 
 .pricing .amount {
@@ -152,11 +152,11 @@
 }
 
 .pricing .highlight .unit {
-    color: #FFFFFFB3;
+    color: var(--pico-contrast-hover-background);
 }
 
 .pricing .name {
-    --pico-font-size: 1.125rem;
+    font-size: 1.125rem;
     font-weight: 600;
     order: 1;
     margin: 0 0 0.25rem;
@@ -171,7 +171,7 @@
 }
 
 .pricing .highlight .pricing-header .text {
-    color: #FFFFFFB3;
+    color: var(--pico-contrast-hover-background);
 }
 
 .pricing .features {
@@ -207,15 +207,15 @@
 }
 
 .pricing .highlight .name {
-    color: #FFFFFF;
+    color: var(--pico-contrast-inverse);
 }
 
 .pricing .highlight .features li {
-    color: #FFFFFF;
+    color: var(--pico-contrast-inverse);
 }
 
 .pricing .highlight .features li::before {
-    background-color: #FFFFFF;
+    background-color: var(--pico-contrast-inverse);
 }
 
 .pricing .btn {
@@ -223,7 +223,7 @@
     width: 100%;
     text-align: center;
     padding: 0.75rem 1.5rem;
-    background-color: #00000000;
+    background-color: transparent;
     color: var(--pico-contrast);
     border: 1px solid var(--pico-muted-border-color);
     border-radius: var(--pico-border-radius);

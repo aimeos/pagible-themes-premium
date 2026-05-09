@@ -88,13 +88,13 @@
 }
 
 .contact button:has(.success:not(.hidden)) {
-    background-color: #16A34A;
-    border-color: #16A34A;
+    background-color: #166534;
+    border-color: #166534;
     color: var(--pico-contrast-inverse);
 }
 
 .contact button:has(.failure:not(.hidden)) {
-    background-color: #DC2626;
-    border-color: #DC2626;
+    background-color: #991B1B;
+    border-color: #991B1B;
     color: var(--pico-contrast-inverse);
 }
