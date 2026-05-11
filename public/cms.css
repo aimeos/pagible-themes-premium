@@ -28,7 +28,7 @@
     --pico-contrast-hover-background: #E2E8F0;
     --pico-contrast-hover-underline: var(--pico-contrast-hover);
     --pico-contrast-focus: var(--pico-text-selection-color);
-    --pico-contrast-inverse: #FFFFFF;
+    --pico-contrast-inverse: #1d1414;
     --pico-primary: #991B1B;
     --pico-primary-background: #991B1B10;
     --pico-primary-border: var(--pico-primary);
@@ -221,20 +221,6 @@ header nav .sidebar-close button {
     padding: 0.75rem;
     background: none;
     border: none;
-}
-
-header nav .menu a[role=menuitem] {
-    background-color: var(--pico-primary);
-    color: var(--pico-primary-inverse);
-    border-color: var(--pico-primary);
-    border-radius: var(--pico-border-radius);
-    margin-inline-start: 0;
-}
-
-header nav .menu a[role=menuitem]:hover {
-    background-color: var(--pico-primary-hover);
-    border-color: var(--pico-primary-hover);
-    color: var(--pico-primary-inverse);
 }
 
 @media (max-width: 991px) {
