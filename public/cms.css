@@ -28,7 +28,7 @@
     --pico-contrast-hover-background: #E2E8F0;
     --pico-contrast-hover-underline: var(--pico-contrast-hover);
     --pico-contrast-focus: var(--pico-text-selection-color);
-    --pico-contrast-inverse: #1d1414;
+    --pico-contrast-inverse: #F8F9FA;
     --pico-primary: #991B1B;
     --pico-primary-background: #991B1B10;
     --pico-primary-border: var(--pico-primary);

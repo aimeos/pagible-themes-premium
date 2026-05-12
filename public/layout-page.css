@@ -16,6 +16,7 @@
 }
 
 .cms-content > :nth-child(even) {
+    --pico-contrast-inverse: var(--pico-background-color);
     background-color: var(--pico-muted-background-color);
 }
 

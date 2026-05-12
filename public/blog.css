@@ -3,8 +3,12 @@
  */
 
 .blog .blog-items {
-    display: flex;
+    background-color: var(--pico-contrast-inverse);
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: calc(var(--pico-border-radius) * 4);
     flex-direction: column;
+    display: flex;
+    padding: 2rem;
     gap: 1rem;
 }
 
@@ -21,9 +25,6 @@
 
 .blog .blog-item {
     text-decoration: none;
-    background-color: var(--pico-contrast-inverse);
-    border: 1px solid var(--pico-muted-border-color);
-    border-radius: calc(var(--pico-border-radius) * 2);
     transition: box-shadow 0.25s ease, transform 0.25s ease;
     padding: 0.5rem;
     display: block;
