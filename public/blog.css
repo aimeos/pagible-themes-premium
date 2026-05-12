@@ -8,18 +8,19 @@
     border-radius: calc(var(--pico-border-radius) * 4);
     flex-direction: column;
     display: flex;
-    padding: 2rem;
-    gap: 1rem;
+    overflow: clip;
 }
 
 .blog .first,
 .blog .second {
+    padding: 2rem;
     width: 100%;
 }
 
 .blog .second {
-    display: flex;
+    background-color: var(--pico-contrast-inverse);
     flex-direction: column;
+    display: flex;
     gap: 1rem;
 }
 
