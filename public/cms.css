@@ -21,14 +21,14 @@
     --pico-muted-background-color: #F1F5F9;
     --pico-contrast: #0F172A;
     --pico-contrast-border: #0F172A1A;
-    --pico-contrast-background: #F1F5F9;
+    --pico-contrast-background: #FDFEFF;
     --pico-contrast-underline: var(--pico-contrast);
     --pico-contrast-hover: #020617;
     --pico-contrast-hover-border: #0F172A26;
     --pico-contrast-hover-background: #E2E8F0;
     --pico-contrast-hover-underline: var(--pico-contrast-hover);
     --pico-contrast-focus: var(--pico-text-selection-color);
-    --pico-contrast-inverse: #F8F9FA;
+    --pico-contrast-inverse: #FDFEFF;
     --pico-primary: #991B1B;
     --pico-primary-background: #991B1B10;
     --pico-primary-border: var(--pico-primary);

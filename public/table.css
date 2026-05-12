@@ -4,6 +4,13 @@
  */
 
 .table-responsive .table-row {
+  background-color: var(--pico-contrast-background);
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: calc(var(--pico-border-radius) * 4);
+  padding: 2rem;
+}
+
+.table-responsive .table-row {
     display: flex;
     align-items: flex-end;
     border-bottom: 1px solid var(--pico-muted-border-color);

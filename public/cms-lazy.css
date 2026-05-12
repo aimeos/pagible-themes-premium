@@ -211,7 +211,7 @@ footer.cms-content .cards .card-list {
 }
 
 footer.cms-content .cards .card-item {
-    background-color: var(--pico-contrast-inverse);
+    background-color: var(--pico-contrast);
     border: none;
     box-shadow: none;
     border-radius: 0;
