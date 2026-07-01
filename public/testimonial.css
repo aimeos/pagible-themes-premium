@@ -26,12 +26,11 @@
 }
 
 .testimonial blockquote {
+    color: var(--pico-color);
+    line-height: 1.65;
     margin: 0 0 1.75rem;
     padding: 0;
     border: 0;
-    color: var(--pico-color);
-    font-size: calc(var(--pico-font-size) * 0.95);
-    line-height: 1.65;
 }
 
 .testimonial blockquote::before {
