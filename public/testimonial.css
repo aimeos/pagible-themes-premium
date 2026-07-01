@@ -14,12 +14,15 @@
 }
 
 .testimonial .testimonial-item {
-    margin: 0;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--pico-contrast-background);
     border: 1px solid var(--pico-muted-border-color);
     border-radius: calc(var(--pico-border-radius) * 4);
     box-shadow: 0 0.5rem 2rem #0F172A0A;
+    padding: 2rem;
+    margin: 0;
 }
 
 .testimonial blockquote {
@@ -32,19 +35,11 @@
 }
 
 .testimonial blockquote::before {
-    content: '"';
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.75rem;
-    height: 2.75rem;
-    color: var(--pico-primary-inverse);
-    background-color: var(--pico-primary);
-    border-radius: 9999px;
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 1rem;
+    content: '“';
+}
+
+.testimonial blockquote::after {
+    content: '”';
 }
 
 .testimonial blockquote p:last-child {
