@@ -109,6 +109,7 @@
 
 .cms-content .list .second .content,
 .cms-content .list .list-list .content {
+    align-content: center;
     flex: 3;
 }
 
