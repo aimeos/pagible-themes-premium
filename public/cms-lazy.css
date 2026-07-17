@@ -233,33 +233,30 @@ footer.cms-content .cards .title {
     margin-bottom: 1.5rem;
 }
 
-footer.cms-content .cards :is(.text, .cms-text) {
+footer.cms-content .cards .text {
     color: var(--pico-contrast-inverse);
     font-size: calc(var(--pico-font-size) * 0.8);
     font-weight: 400;
 }
 
-footer.cms-content .cards :is(.text, .cms-text) p {
+footer.cms-content .cards .text p {
     line-height: 1.75;
     margin: 0;
 }
 
-footer.cms-content .cards :is(.text, .cms-text) a,
-footer.cms-content .cards :is(.text, .cms-text) a:visited,
-footer.cms-content .cards :is(.text, .cms-text) a:hover,
-footer.cms-content .cards :is(.text, .cms-text) a:focus,
-footer.cms-content .cards :is(.text, .cms-text) a:active {
+footer.cms-content .cards .text a,
+footer.cms-content .cards .text a:visited {
     color: var(--pico-contrast-inverse);
     text-decoration: none;
     display: inline-block;
     padding: 0.31rem 0;
 }
 
-footer.cms-content .cards :is(.text, .cms-text) a:hover {
+footer.cms-content .cards .text a:hover {
     color: var(--pico-contrast-hover-background);
 }
 
-footer.cms-content .cards :is(.text, .cms-text) ul {
+footer.cms-content .cards .text ul {
     padding-left: 0;
     list-style: none;
 }

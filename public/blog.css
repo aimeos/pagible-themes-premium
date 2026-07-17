@@ -2,41 +2,41 @@
  * @license MIT, https://opensource.org/license/MIT
  */
 
-.cms-content .list .list-items {
+.blog .blog-items {
     flex-direction: column;
     display: flex;
 }
 
-.cms-content .list .list-default {
+.blog .blog-default {
     border: 1px solid var(--pico-muted-border-color);
     border-radius: calc(var(--pico-border-radius) * 4);
     overflow: clip;
 }
 
-.cms-content .list .first,
-.cms-content .list .second {
+.blog .first,
+.blog .second {
     padding: 2rem;
     width: 100%;
 }
 
-.cms-content .list .second,
-.cms-content .list .list-list {
+.blog .second,
+.blog .blog-list {
     flex-direction: column;
     display: flex;
     gap: 1rem;
 }
 
-.cms-content .list .second {
+.blog .second {
     background-color: var(--pico-contrast-inverse);
 }
 
-.cms-content .list .list-cards {
+.blog .blog-cards {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
 }
 
-.cms-content .list .list-item {
+.blog .blog-item {
     text-decoration: none;
     transition: box-shadow 0.25s ease, transform 0.25s ease;
     padding: 0.5rem;
@@ -44,109 +44,108 @@
     height: 100%;
 }
 
-.cms-content .list .list-item:hover {
+.blog .blog-item:hover {
     box-shadow: 0 0.5rem 1.5rem #0F172A0F;
     transform: translateY(-2px);
 }
 
-.cms-content .list img {
+.blog img {
     display: block;
     aspect-ratio: 5 / 3;
     object-fit: cover;
     width: 100%;
 }
 
-.cms-content .list .date {
+.blog .date {
     color: var(--pico-muted-color);
     font-size: calc(var(--pico-font-size) * 0.6);
     font-weight: 400;
 }
 
-.cms-content .list h3 {
+.blog h3 {
     margin: 0;
     margin-top: 0.75rem;
     font-weight: 500;
 }
 
-.cms-content .list .first .content,
-.cms-content .list .list-cards .content {
+.blog .first .content,
+.blog .blog-cards .content {
     display: flex;
     align-items: baseline;
     padding: 1rem 1.25rem;
     gap: 1rem;
 }
 
-.cms-content .list .first .date-day,
-.cms-content .list .list-cards .date-day {
+.blog .first .date-day,
+.blog .blog-cards .date-day {
     font-weight: 600;
     font-size: calc(var(--pico-font-size) * 1.1);
     font-family: var(--pico-font-family-display);
 }
 
-.cms-content .list .first .date-month,
-.cms-content .list .list-cards .date-month {
+.blog .first .date-month,
+.blog .blog-cards .date-month {
     text-transform: uppercase;
     font-size: calc(var(--pico-font-size) * 0.6);
     letter-spacing: 0.05em;
 }
 
-.cms-content .list .first h3,
-.cms-content .list .list-cards h3 {
+.blog .first h3,
+.blog .blog-cards h3 {
     flex-grow: 1;
 }
 
-.cms-content .list .second .list-item,
-.cms-content .list .list-list .list-item {
+.blog .second .blog-item,
+.blog .blog-list .blog-item {
     align-items: center;
     display: flex;
 }
 
-.cms-content .list .second picture,
-.cms-content .list .list-list picture {
+.blog .second picture,
+.blog .blog-list picture {
     padding-inline-end: 1rem;
     flex: 2;
 }
 
-.cms-content .list .second .content,
-.cms-content .list .list-list .content {
-    align-content: center;
+.blog .second .content,
+.blog .blog-list .content {
     flex: 3;
 }
 
-.cms-content .list .second h3,
-.cms-content .list .list-list h3 {
+.blog .second h3,
+.blog .blog-list h3 {
     font-size: calc(var(--pico-font-size) * 0.75);
 }
 
-.cms-content .list .list-list .intro {
+.blog .blog-list .intro {
     color: var(--pico-muted-color);
     font-size: calc(var(--pico-font-size) * 0.7);
     margin: 0.25rem 0 0;
 }
 
-.cms-content .list .list-list .list-item:nth-child(even) {
+.blog .blog-list .blog-item:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-.cms-content .list .list-list .list-item:nth-child(even) picture {
+.blog .blog-list .blog-item:nth-child(even) picture {
     padding-inline: 1rem 0;
 }
 
 @media (min-width: 768px) {
-    .cms-content .list .list-default {
+    .blog .blog-default {
         flex-direction: row;
     }
 
-    .cms-content .list .list-default .first,
-    .cms-content .list .list-default .second {
+    .blog .blog-default .first,
+    .blog .blog-default .second {
         width: 50%;
     }
 
-    .cms-content .list .list-cards {
+    .blog .blog-cards {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-.cms-content .list nav .pagination {
+.blog nav .pagination {
     margin: auto;
 }
