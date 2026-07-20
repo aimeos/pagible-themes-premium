@@ -43,9 +43,12 @@ class PremiumDemo extends AbstractDemo
      */
     private const PHOTOS = [
         'beam' => ['photo-1507473885765-e6ed057f782c', 'Beam One task light', 'Minimal task light casting a warm pool of light across a quiet workspace'],
+        'beam-card' => ['photo-1731762524352-b5663f83a830', 'Beam One product detail', 'Sculptural orange task lamp with balanced arms and an illuminated ring head against a soft grey background'],
         'detail' => ['photo-1523275335684-37898b6baf30', 'Precision control detail', 'Close view of a precisely machined metal control and its tactile markings'],
         'dial' => ['photo-1516321318423-f06f85e504b3', 'Dial One workspace control', 'Compact physical control placed beside a keyboard in a focused workspace'],
+        'dial-card' => ['photo-1765805914125-56fce216cd1b', 'Dial One product detail', 'Black desktop control with a large illuminated rotary dial and physical shortcut buttons'],
         'dock' => ['photo-1517336714731-489689fd1ca8', 'Dock One charging hub', 'Organized desk with a laptop and compact charging equipment'],
+        'dock-card' => ['photo-1778854096628-0266421cac9e', 'Dock One product detail', 'Compact silver charging stand with magnetic device pads and USB-C ports on a bright desk'],
         'focus' => ['photo-1497366811353-6870744d04b2', 'Calm product workspace', 'Bright and uncluttered workspace prepared for concentrated product work'],
         'home' => ['photo-1494438639946-1ebd1d20bf85', 'Stillform products at home', 'Warm interior with considered lighting and technology integrated into the room'],
         'interface' => ['photo-1550745165-9bc0b252726f', 'Physical interface study', 'Collection of familiar physical controls used for an interaction study'],
@@ -270,6 +273,7 @@ class PremiumDemo extends AbstractDemo
                 'items' => [
                     ['title' => 'Does the product still work when our service is unavailable?', 'text' => 'Its primary function and physical controls must remain available without an account or internet connection.'],
                     ['title' => 'Can a user understand what is being shared?', 'text' => 'The setting must name the data, recipient, purpose, and retention period before consent is given.'],
+                    ['title' => 'Can the product be updated without an account?', 'text' => 'Signed firmware files and release notes must remain available for direct download and manual installation.'],
                     ['title' => 'Can the feature be removed later?', 'text' => 'Connected additions should not create a permanent dependency that prevents future local operation or repair.'],
                 ],
             ]],
@@ -322,6 +326,7 @@ class PremiumDemo extends AbstractDemo
                     ['title' => 'Where can I find repair help?', 'text' => 'Start with the Support section for care instructions, troubleshooting, warranty terms, and replacement-part routes.'],
                     ['title' => 'Do you work with architects and interior designers?', 'text' => 'Yes. The trade team can provide samples, technical files, finish guidance, project pricing, and delivery planning.'],
                     ['title' => 'Can I visit the studio?', 'text' => 'Studio visits are limited to scheduled product reviews, press appointments, and trade project sessions.'],
+                    ['title' => 'When will I hear back?', 'text' => 'The team replies within two working days. Safety-related product issues and active repair cases are prioritised.'],
                 ],
             ]],
         ], $home );
@@ -438,9 +443,6 @@ class PremiumDemo extends AbstractDemo
             'type' => 'docs',
             'status' => 1,
         ], [
-            ['id' => Utils::uid(), 'type' => 'toc', 'group' => 'main', 'data' => [
-                'title' => 'On this page',
-            ]],
             ['id' => Utils::uid(), 'type' => 'heading', 'group' => 'main', 'data' => [
                 'level' => 2,
                 'title' => 'Clean without changing the finish',
@@ -594,7 +596,6 @@ class PremiumDemo extends AbstractDemo
                 'cards' => [
                     ['title' => 'Clear in use', 'text' => 'The primary action must be understandable from the object, not recovered from a settings page.'],
                     ['title' => 'Quiet at rest', 'text' => 'No unnecessary status light, notification, movement, or network activity when attention belongs elsewhere.'],
-                    ['title' => 'Honest in material', 'text' => 'Finishes should age predictably, joints should explain assembly, and structural parts should feel structural.'],
                     ['title' => 'Possible to repair', 'text' => 'Wear parts, high-risk electronics, documentation, tools, and service pricing are reviewed before launch.'],
                 ],
             ]],
@@ -773,9 +774,9 @@ class PremiumDemo extends AbstractDemo
             ['id' => Utils::uid(), 'type' => 'cards', 'group' => 'main', 'data' => [
                 'title' => 'The Stillform collection',
                 'cards' => [
-                    ['title' => 'Beam One', 'text' => "Adaptive task light with direct controls and a replaceable light engine.\n\n[See Beam One](/collection#products)", 'file' => ['id' => $this->img( 'beam' ), 'type' => 'file']],
-                    ['title' => 'Dial One', 'text' => "A tactile controller for the digital actions your hand repeats every day.\n\n[See Dial One](/collection#products)", 'file' => ['id' => $this->img( 'detail' ), 'type' => 'file']],
-                    ['title' => 'Dock One', 'text' => "A stable 140 W charging hub with serviceable power and port modules.\n\n[See Dock One](/collection#products)", 'file' => ['id' => $this->img( 'dock' ), 'type' => 'file']],
+                    ['title' => 'Beam One', 'text' => "Adaptive task light with direct controls and a replaceable light engine.\n\n[See Beam One](/collection#products)", 'file' => ['id' => $this->img( 'beam-card' ), 'type' => 'file']],
+                    ['title' => 'Dial One', 'text' => "A tactile controller for the digital actions your hand repeats every day.\n\n[See Dial One](/collection#products)", 'file' => ['id' => $this->img( 'dial-card' ), 'type' => 'file']],
+                    ['title' => 'Dock One', 'text' => "A stable 140 W charging hub with serviceable power and port modules.\n\n[See Dock One](/collection#products)", 'file' => ['id' => $this->img( 'dock-card' ), 'type' => 'file']],
                 ],
             ]],
             ['id' => Utils::uid(), 'type' => 'image-text', 'group' => 'main', 'data' => [
