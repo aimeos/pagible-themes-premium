@@ -686,6 +686,7 @@ class PremiumDemo extends AbstractDemo
                 ['title' => 'Products', 'text' => "- [Collection](/collection)\n- [Beam One](/collection#products)\n- [Dial One](/collection#products)\n- [Dock One](/collection#products)"],
                 ['title' => 'Company', 'text' => "- [Studio](/studio)\n- [Journal](/journal)\n- [Contact](/contact)"],
                 ['title' => 'Support', 'text' => "- [Product support](/support)\n- [Set up Beam One](/support/beam-one)\n- [Care and repair](/support/care-and-repair)"],
+                ['title' => 'Contact', 'text' => "- [General enquiries](/contact)\n- [orders@stillform.example](mailto:orders@stillform.example)\n- [trade@stillform.example](mailto:trade@stillform.example)\n- [support@stillform.example](mailto:support@stillform.example)"],
             ];
 
             $element = Element::forceCreate( [
