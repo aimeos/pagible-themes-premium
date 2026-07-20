@@ -694,7 +694,7 @@ class PremiumDemo extends AbstractDemo
                 'lang' => 'en',
                 'type' => 'cards',
                 'name' => 'Stillform footer',
-                'data' => ['type' => 'cards', 'data' => ['cards' => $cards]],
+                'data' => ['type' => 'cards', 'data' => ['title' => 'Stillform', 'cards' => $cards]],
                 'editor' => 'demo',
             ] );
 
@@ -704,7 +704,7 @@ class PremiumDemo extends AbstractDemo
                     'lang' => 'en',
                     'type' => 'cards',
                     'name' => 'Stillform footer',
-                    'data' => ['cards' => $cards],
+                    'data' => ['title' => 'Stillform', 'cards' => $cards],
                 ],
                 'published' => true,
                 'editor' => 'demo',
@@ -811,7 +811,6 @@ class PremiumDemo extends AbstractDemo
             ['id' => 'contact', 'type' => 'contact', 'group' => 'main', 'data' => [
                 'title' => 'Find the right object for the room',
             ]],
-            ['id' => Utils::uid(), 'type' => 'heading', 'group' => 'footer', 'data' => ['level' => 2, 'title' => 'Stillform']],
             ['type' => 'reference', 'refid' => $elementId, 'group' => 'footer'],
         ];
 
@@ -999,7 +998,6 @@ SVG;
             ], 'meta' ),
         ];
 
-        $content[] = ['id' => Utils::uid(), 'type' => 'heading', 'group' => 'footer', 'data' => ['level' => 2, 'title' => 'Stillform']];
         $content[] = ['type' => 'reference', 'refid' => $elementId, 'group' => 'footer'];
 
         $page = Page::forceCreate( $data + [

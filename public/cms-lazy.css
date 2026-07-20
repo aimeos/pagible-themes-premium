@@ -264,6 +264,7 @@ footer.cms-content .cards :is(.text, .cms-text) ul {
     list-style: none;
 }
 
+footer.cms-content .cards > h2,
 footer.cms-content .heading h1,
 footer.cms-content .heading h2,
 footer.cms-content .heading h3 {
